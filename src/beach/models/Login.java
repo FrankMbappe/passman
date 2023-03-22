@@ -1,3 +1,5 @@
+package beach.models;
+
 public class Login {
     private String title;
     private String url;

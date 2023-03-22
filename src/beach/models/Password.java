@@ -1,3 +1,5 @@
+package beach.models;
+
 import org.apache.commons.text.RandomStringGenerator;
 
 public class Password {

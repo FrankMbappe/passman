@@ -1,3 +1,5 @@
+package beach.models;
+
 public class User {
 
     private final int id;
@@ -7,7 +9,7 @@ public class User {
 
     /* TODO:
         Username and password shouldn't be empty.
-        Password should be min 8 char long and contain at least 1 number
+        beach.models.Password should be min 8 char long and contain at least 1 number
        */
 
     public User(String username, String password) {

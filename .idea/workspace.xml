@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_commons_text.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BeachUtil/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BeachUtil/MenuOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Password.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+    <list default="true" id="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" name="Changes" comment="Implement User, Login, &amp; Password classes">
+      <change afterPath="$PROJECT_DIR$/src/beach/ass/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/beach/ass/models/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/beach/ass/models/PassengerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/beach/ass/models/Sex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/beach/ass/tests/TestDMO2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/passman.iml" beforeDir="false" afterPath="$PROJECT_DIR$/passman.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BeachUtil/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/utils/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BeachUtil/MenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/utils/MenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/models/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/models/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/models/User.java" afterDir="false" />
     </list>
     <list id="a16ea7ac-c863-4f18-ab09-6bcf9fe6fb43" name="Changes by sanjana" comment="">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -28,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -38,9 +42,12 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/Main.java">
       <ranges>
-        <range start1="2" end1="5" start2="2" end2="20" changelist="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" />
-        <range start1="6" end1="6" start2="21" end2="22" changelist="a16ea7ac-c863-4f18-ab09-6bcf9fe6fb43" />
-        <range start1="7" end1="7" start2="23" end2="24" changelist="a16ea7ac-c863-4f18-ab09-6bcf9fe6fb43" />
+        <range start1="0" end1="0" start2="0" end2="4" changelist="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" />
+        <range start1="4" end1="5" start2="8" end2="9" changelist="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" />
+        <range start1="6" end1="7" start2="10" end2="11" changelist="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" />
+        <range start1="8" end1="9" start2="12" end2="13" changelist="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" />
+        <range start1="21" end1="21" start2="25" end2="26" changelist="a16ea7ac-c863-4f18-ab09-6bcf9fe6fb43" />
+        <range start1="22" end1="22" start2="27" end2="28" changelist="a16ea7ac-c863-4f18-ab09-6bcf9fe6fb43" />
       </ranges>
     </file>
   </component>
@@ -58,28 +65,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.language.Kotlin",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.language.Kotlin&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.Launcher">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beach.ass.Launcher" />
+      <module name="passman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="beach.ass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="passman" />
@@ -89,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Launcher" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -107,7 +128,9 @@
       <workItem from="1679390576988" duration="657000" />
       <workItem from="1679407651861" duration="1555000" />
       <workItem from="1679411895041" duration="460000" />
-      <workItem from="1679430155234" duration="7486000" />
+      <workItem from="1679430155234" duration="7623000" />
+      <workItem from="1679497724821" duration="922000" />
+      <workItem from="1679520326303" duration="2602000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1679407779814</created>
@@ -116,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679407779814</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implement User, Login, &amp; Password classes">
+      <created>1679437817514</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679437817514</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,9 +163,21 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Implement User, Login, &amp; Password classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement User, Login, &amp; Password classes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

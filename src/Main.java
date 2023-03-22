@@ -1,12 +1,16 @@
+import beach.models.Login;
+import beach.models.Password;
+import beach.models.User;
+
 public class Main {
     public static void main(String[] args) {
         var str = "Requirements:\n" +
                 "\n" +
-                "1. (DS & CK) User registration: Users should be able to create an account with a unique username and password.\n" +
+                "1. (DS & CK) beach.models.User registration: Users should be able to create an account with a unique username and password.\n" +
                 "\n" +
-                "2. (CK) Password storage: Users should be able to securely store and manage their passwords. Each password entry should include a title, username/email, password, and an optional description.\n" +
+                "2. (CK) beach.models.Password storage: Users should be able to securely store and manage their passwords. Each password entry should include a title, username/email, password, and an optional description.\n" +
                 "\n" +
-                "3. (DS) Password generation: The application should have a password generator that can generate strong and unique passwords for users.\n" +
+                "3. (DS) beach.models.Password generation: The application should have a password generator that can generate strong and unique passwords for users.\n" +
                 "\n" +
                 "4. (DS) Encryption: All password data should be encrypted using a strong encryption algorithm to ensure the security of user's data.\n" +
                 "\n" +

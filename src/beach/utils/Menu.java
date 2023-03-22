@@ -1,4 +1,4 @@
-package BeachUtil;
+package beach.utils;
 
 import java.util.ArrayList;
 
