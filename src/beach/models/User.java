@@ -1,34 +1,39 @@
 package beach.models;
 
+import java.time.LocalDateTime;
+import java.util.UUID;
+
 public class User {
 
-    private final int id;
-    private String username;
+
+    private int userId;
+    private String userName;
     private String password;
-    private static int userid = 1;
+    private String hint;
+    private LocalDateTime lastConnected;
 
-    /* TODO:
-        Username and password shouldn't be empty.
-        beach.models.Password should be min 8 char long and contain at least 1 number
-       */
 
-    public User(String username, String password) {
-        this.id = User.userid++;
-        this.username = username;
+    public User(String userName, String password, String hint) {
+        this.userName = userName;
         this.password = password;
+        this.hint = hint;
+
     }
 
-    public int getId() {
-        return id;
+    public int getUserId() {
+        return userId;
     }
 
-    public String getUsername() {
-        return username;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public void setUsername(String username) {
-        //
-        this.username = username;
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -37,5 +42,31 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getHint() {
+        return hint;
+    }
+
+    public void setHint(String hint) {
+        this.hint = hint;
+    }
+
+    public LocalDateTime getLastConnected() {
+        return lastConnected;
+    }
+
+    public void setLastConnected(LocalDateTime lastConnected) {
+        this.lastConnected = lastConnected;
+    }
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", hint='" + hint + '\'' +
+                ", lastConnected=" + lastConnected +
+                '}';
     }
 }

@@ -9,13 +9,13 @@ public class Login {
     //todo: pw cannot be empty
     public Login(String url, User user) {
         this.url = url;
-        this.username = user.getUsername();
+        this.username = user.getUserName();
         this.password = user.getPassword();
     }
 
     public Login(String url, User user, String title) {
         this.url = url;
-        this.username = user.getUsername();
+        this.username = user.getUserName();
         this.password = user.getPassword();
         this.title = title;
     }

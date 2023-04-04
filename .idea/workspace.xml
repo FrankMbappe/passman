@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" name="Changes" comment="Implement User, Login, &amp; Password classes&#10;Implement 1st part of beach assignment">
-      <change afterPath="$PROJECT_DIR$/src/beach/ass/dao/PassengerCSVDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/beach/ass/res/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/beach/ass/tests/TestSER1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/beach/ass/utils/FileUtils.java" afterDir="false" />
+    <list default="true" id="dbba99ea-ffa3-4fc9-a42a-325e20d8fa59" name="Changes" comment="Implement UserDAO and PasswordDAO&#10;Implement User Authentication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/passman.iml" beforeDir="false" afterPath="$PROJECT_DIR$/passman.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/beach/ass/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/ass/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/dao/PassengerCSVDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/models/Passenger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/models/PassengerClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/models/Sex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/res/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/tests/TestDMO2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/tests/TestSER1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/ass/utils/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/models/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/models/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/models/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/models/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beach/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/utils/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beach/utils/MenuOption.java" beforeDir="false" />
     </list>
-    <list id="a16ea7ac-c863-4f18-ab09-6bcf9fe6fb43" name="Changes by sanjana" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list id="a16ea7ac-c863-4f18-ab09-6bcf9fe6fb43" name="Changes by sanjana" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/sanjana/Downloads/sqlite-jdbc-3.41.2.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +83,7 @@
       <recent name="C:\Users\frank\IdeaProjects\passman\src\beach\ass\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="Application.beach.launchers.Main">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="beach.ass.Launcher" />
       <module name="passman" />
@@ -95,8 +104,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="beach.launchers.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beach.launchers.Main" />
+      <module name="passman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="beach.launchers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.beach.launchers.Main" />
         <item itemvalue="Application.Launcher" />
         <item itemvalue="Application.Main" />
       </list>
@@ -119,6 +142,7 @@
       <workItem from="1679430155234" duration="7623000" />
       <workItem from="1679497724821" duration="922000" />
       <workItem from="1679520326303" duration="6288000" />
+      <workItem from="1680609030080" duration="809000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1679407779814</created>
@@ -173,7 +197,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Implement User, Login, &amp; Password classes" />
     <MESSAGE value="Implement User, Login, &amp; Password classes&#10;Implement 1st part of beach assignment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement User, Login, &amp; Password classes&#10;Implement 1st part of beach assignment" />
+    <MESSAGE value="Implement UserDAO and PasswordDAO&#10;Implement User Authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement UserDAO and PasswordDAO&#10;Implement User Authentication" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
